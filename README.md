@@ -1,2 +1,2 @@
 # 100
-My 100 day project of exploring and learning to code in JavaScript
+100 days of notes & mini projects to explore and learn to code in JavaScript
