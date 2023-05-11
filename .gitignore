@@ -27,3 +27,6 @@ dist-ssr
 vite.config.js
 postcss.config.js
 tailwind.config.js
+
+# Assets
+assets
