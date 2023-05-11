@@ -6,7 +6,7 @@
 @font-face {
     font-family: 'Inconsolata';
     src: url("assets/fonts/inconsolata-v31-latin-regular.woff2") format('woff2'),
-    url('assets/fonts/inconsolata-v31-latin-regular.woff') format('woff');
+        url('assets/fonts/inconsolata-v31-latin-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
