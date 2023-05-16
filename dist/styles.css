@@ -8,5 +8,5 @@
 }
 
 .note-body {
-  @apply font-sans mt-8 custom-margin
+  @apply font-sans mt-8 custom-margin leading-7
 }

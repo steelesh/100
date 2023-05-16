@@ -47,6 +47,15 @@
     font-style: normal;
 }
 
+/* Newsreader Italic */
+@font-face {
+  font-family: 'Newsreader Italic';
+  src: url("./assets/fonts/Newsreader16pt-Italic.woff2") format('woff2'),
+      url('./assets/fonts/Newsreader16pt-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .custom-margin {
     @apply ml-16 md:ml-48
 }
