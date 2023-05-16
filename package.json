@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run build && vite",
     "build": "postcss style.css -o dist/styles.css && concat -o dist/styles.css dist/styles.css notes/notes.css proj/proj.css && postcss dist/styles.css -o dist/styles.min.css"
   },
   "devDependencies": {
