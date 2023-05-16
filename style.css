@@ -12,6 +12,12 @@
   h3 {
     @apply text-2xl;
   }
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
+    @apply text-lg;
+  }
 }
 
 /* Inconsolata */
@@ -39,6 +45,10 @@
         url('./assets/fonts/Inter-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+.custom-margin {
+    @apply ml-16 md:ml-48
 }
 
 .animate {
