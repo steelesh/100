@@ -13,6 +13,15 @@
     font-style: normal;
 }
 
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    src: url("./assets/fonts/OpenSans-Regular.woff2") format('woff2'),
+        url('./assets/fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .brand {
     font-family: Helvetica, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
