@@ -13,3 +13,13 @@
 .return {
   @apply font-italic mt-16 custom-margin text-[#555] lowercase
 }
+
+.custom-link {
+  color: purple;
+  border-bottom: 1.25px solid rgba(0, 0, 0, 0.25);
+  transition: border-color 0.25s ease-in-out;
+}
+
+.custom-link:hover {
+  border-bottom: 1.25px solid rgba(0, 0, 0, 1);
+}
