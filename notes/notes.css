@@ -1,5 +1,5 @@
 .note-title {
-  @apply font-display mt-16 custom-margin
+  @apply font-display mt-8 custom-margin
 }
 
 .note-subheading {
@@ -7,5 +7,9 @@
 }
 
 .note-body {
-  @apply font-sans mt-8 custom-margin leading-7
+  @apply font-sans mt-8 custom-margin leading-7 text-[#555]
+}
+
+.return {
+  @apply font-italic mt-16 custom-margin text-[#555]
 }
