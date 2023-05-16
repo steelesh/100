@@ -7,6 +7,7 @@ module.exports = {
       display: ['Inter Bold'],
       sans: ['Inter Regular'],
       monospace: ['Inconsolata'],
+      italic: ['Newsreader Italic']
     },
     extend: {},
   },
