@@ -1,0 +1,11 @@
+.note-title {
+  @apply font-display mt-16 ml-16 md:ml-48
+}
+
+.note-subheading {
+  @apply font-display mt-8 ml-16 md:ml-48
+}
+
+.note-body {
+  @apply font-sans mt-8 ml-16 md:ml-48
+}
