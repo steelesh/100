@@ -12,5 +12,5 @@
 }
 
 .return {
-  @apply font-italic mt-16 custom-margin text-[#555]
+  @apply font-italic text-lg mt-16 custom-margin text-[#555]
 }
