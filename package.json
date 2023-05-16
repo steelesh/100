@@ -4,18 +4,15 @@
   "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
-    "dev": "npm run build && vite",
-    "build": "postcss style.css -o dist/styles.css && concat -o dist/styles.css dist/styles.css notes/notes.css proj/proj.css && postcss dist/styles.css -o dist/styles.min.css"
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "concat": "^1.0.3",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.23",
-    "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0",
-    "postcss-url": "^10.1.3",
     "tailwindcss": "^3.3.2",
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "vite-plugin-windicss": "^1.9.0"
   }
 }

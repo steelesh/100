@@ -1,3 +1,5 @@
+@import './styles/notes.css';
+@import './styles/proj.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
