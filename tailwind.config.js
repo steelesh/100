@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       display: ['Inter Bold'],
       sans: ['Inter Regular'],
+      sans_serif: ['Söhne'],
       monospace: ['Inconsolata'],
       italic: ['Newsreader Italic']
     },
