@@ -1,5 +1,5 @@
 .note-title {
-  @apply font-display mt-8 custom-margin
+  @apply font-display mt-8 custom-margin text-black dark:text-white
 }
 
 .note-subheading {
@@ -7,19 +7,17 @@
 }
 
 .note-body {
-  @apply font-sans mt-8 custom-margin leading-7 text-[#555]
+  @apply font-sans mt-8 custom-margin leading-7 text-[#555] dark:text-[#bbb]
 }
 
 .return {
-  @apply font-italic mt-16 custom-margin text-[#555] lowercase
+  @apply text-lg font-italic mt-16 custom-margin text-[#555] dark:text-[#bbb] animate
 }
 
 .custom-link {
-  color: purple;
-  border-bottom: 1.25px solid rgba(0, 0, 0, 0.25);
-  transition: border-color 0.25s ease-in-out;
+  @apply text-black dark:text-white border-b border-[rgba(85,85,85,0.25)] dark:border-[#bbb] transition-colors ease-in-out duration-500
 }
 
 .custom-link:hover {
-  border-bottom: 1.25px solid rgba(0, 0, 0, 1);
+  @apply border-black dark:border-white
 }
