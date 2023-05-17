@@ -1,5 +1,5 @@
 .note-title {
-  @apply font-display mt-8 text-black dark:text-white
+  @apply font-display mt-24
 }
 
 .note-subheading {
@@ -7,11 +7,11 @@
 }
 
 .note-body {
-  @apply font-sans mt-8 leading-7 text-[#555] dark:text-[#bbb]
+  @apply font-sans mt-8 leading-7 text-[#555] dark:text-[#bbb] base-font-size
 }
 
 .return {
-  @apply text-lg font-italic mt-16 text-[#555] dark:text-[#bbb] animate
+  @apply text-lg font-italic text-[#555] dark:text-[#bbb] animate absolute top-4 md:top-8 ml-8 md:ml-16
 }
 
 .custom-link {
