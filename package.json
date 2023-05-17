@@ -7,8 +7,10 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.38.6",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
+    "eslint": "^8.40.0",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.2",
