@@ -79,7 +79,7 @@
 }
 
 .custom-footer {
-  @apply flex items-center justify-center py-16 font-italic text-xs tracking-wide
+  @apply py-16 font-italic text-xs tracking-wide text-center
 }
 
 .animate {
