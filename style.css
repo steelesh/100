@@ -58,6 +58,14 @@
   font-style: normal;
 }
 
+/* Sohne Book */
+@font-face {
+  font-family: 'Söhne';
+  src: url("./assets/fonts/Sohne-Buch.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .animate {
     opacity: 0.6;
     transition: opacity 0.5s ease;
