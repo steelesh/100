@@ -95,6 +95,10 @@
     opacity: 1;
 }
 
-.logo.vanilla {
-    filter: drop-shadow(0 0 0.5em #f7df1eaa);
+.js-logo-link {
+  transform: translateY(-5px);
+}
+
+.js-logo-img {
+  filter: drop-shadow(0 0 0.5em #f7df1eaa);
 }
