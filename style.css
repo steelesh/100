@@ -83,7 +83,7 @@
 }
 
 .custom-footer {
-  @apply py-16 font-italic text-xs tracking-wide w-10/12 mx-auto lg:w-1/2
+  @apply my-16 font-italic text-xs tracking-wide w-10/12 mx-auto lg:w-1/2
 }
 
 .animate {
