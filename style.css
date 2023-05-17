@@ -70,6 +70,10 @@
   @apply text-sm md:text-base
 }
 
+.title {
+  @apply dark:text-white text-black font-display mt-24
+}
+
 .week {
   @apply border-b border-[rgba(85,85,85,0.25)] dark:border-[#bbb] transition-colors ease-in-out duration-500
 }
