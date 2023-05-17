@@ -70,6 +70,10 @@
   @apply text-sm md:text-base
 }
 
+.custom-footer {
+  @apply flex items-center justify-center py-16 font-italic
+}
+
 .animate {
     opacity: 0.6;
     transition: opacity 0.5s ease;
