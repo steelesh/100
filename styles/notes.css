@@ -1,17 +1,17 @@
 .note-title {
-  @apply font-display mt-8 custom-margin text-black dark:text-white
+  @apply font-display mt-8 text-black dark:text-white
 }
 
 .note-subheading {
-  @apply font-display mt-8 custom-margin
+  @apply font-display mt-8
 }
 
 .note-body {
-  @apply font-sans mt-8 custom-margin leading-7 text-[#555] dark:text-[#bbb]
+  @apply font-sans mt-8 leading-7 text-[#555] dark:text-[#bbb]
 }
 
 .return {
-  @apply text-lg font-italic mt-16 custom-margin text-[#555] dark:text-[#bbb] animate
+  @apply text-lg font-italic mt-16 text-[#555] dark:text-[#bbb] animate
 }
 
 .custom-link {
