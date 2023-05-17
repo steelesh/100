@@ -22,7 +22,6 @@
   }
 }
 
-/* Inconsolata */
 @font-face {
     font-family: 'Inconsolata';
     src: url("./assets/fonts/inconsolata-v31-latin-regular.woff2") format('woff2'),
@@ -31,7 +30,6 @@
     font-style: normal;
 }
 
-/* Inter Regular */
 @font-face {
     font-family: 'Inter Regular';
     src: url("./assets/fonts/Inter-Regular.woff2") format('woff2'),
@@ -40,7 +38,6 @@
     font-style: normal;
 }
 
-/* Inter Bold */
 @font-face {
     font-family: 'Inter Bold';
     src: url("./assets/fonts/Inter-Bold.woff2") format('woff2'),
@@ -49,7 +46,6 @@
     font-style: normal;
 }
 
-/* Newsreader Italic */
 @font-face {
   font-family: 'Newsreader Italic';
   src: url("./assets/fonts/Newsreader16pt-Italic.woff2") format('woff2'),
@@ -58,7 +54,6 @@
   font-style: normal;
 }
 
-/* Sohne Book */
 @font-face {
   font-family: 'Söhne';
   src: url("./assets/fonts/Sohne-Buch.woff") format('woff');
