@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ['./**/*.{html,js}'],
   darkMode: 'media',
   theme: {
     fontFamily: {
@@ -8,7 +8,7 @@ module.exports = {
       sans: ['Inter Regular'],
       sans_serif: ['Söhne'],
       monospace: ['Inconsolata'],
-      italic: ['Newsreader Italic']
+      italic: ['Newsreader Italic'],
     },
     extend: {},
   },
