@@ -11,7 +11,7 @@
 }
 
 .return {
-  @apply text-lg font-italic text-[#555] dark:text-[#bbb] animate absolute top-4 md:top-8 ml-8 md:ml-16
+  @apply text-lg font-italic text-[#555] dark:text-[#bbb] animate absolute lg:fixed top-4 md:top-8 ml-8 md:ml-16
 }
 
 .custom-link {
