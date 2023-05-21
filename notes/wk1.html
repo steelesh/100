@@ -1,87 +1,326 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="../assets/favicon/favicon.svg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/7d3dbbb15e.js"
+      crossorigin="anonymous"></script>
+    <link
+      id="darkmodehighlight"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/xt256.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>100 days</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="icon" href="../assets/favicon/favicon.svg" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/7d3dbbb15e.js" crossorigin="anonymous"></script>
-        <link id="darkmodehighlight" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/xt256.min.css">
-        <link rel="stylesheet" href="/style.css">
-        <title>100 days</title>
-    </head>
-
-    <body class="dark:bg-black text-[#555] dark:text-[#bbb]">
-        <div class="flex items-center return">
-            <a href="../index.html">
-                <i class="fa-solid fa-arrow-left-long fa-xs"></i>
-                <i class="ml-2">return</i>
+  <body class="dark:bg-black text-[#555] dark:text-[#bbb]">
+    <div class="flex items-center return">
+      <a href="../index.html">
+        <i class="fa-solid fa-arrow-left-long fa-xs"></i>
+        <i class="ml-2">return</i>
+      </a>
+    </div>
+    <main>
+      <article class="flex flex-col w-10/12 mx-auto lg:w-1/2">
+        <header>
+          <h1 class="note-title">JavaScript Basics</h1>
+        </header>
+        <aside>
+          <h3 class="note-subheading">Table of Contents</h3>
+          <nav>
+            <ul class="custom-unordered-list">
+              <li>
+                <a href="#introduction" class="custom-link">Introduction</a>
+              </li>
+              <li><a href="#comments" class="custom-link">Comments</a></li>
+              <li>
+                <a href="#values-types" class="custom-link">Values & Types</a>
+              </li>
+              <li><a href="#variables" class="custom-link">Variables</a></li>
+              <li><a href="#arithmetic" class="custom-link">Arithmetic</a></li>
+              <li>
+                <a href="#control-flow" class="custom-link">Control Flow</a>
+              </li>
+              <li>
+                <a href="#truthy-falsy" class="custom-link">Truthy and Falsy</a>
+              </li>
+              <li><a href="#semicolons" class="custom-link">Semicolons</a></li>
+              <li><a href="#summary" class="custom-link">Summary</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="note-content">
+          <h3 class="note-subheading" id="introduction">Introduction</h3>
+          <p class="note-body">
+            JavaScript is the programming language of the web. It is the most
+            used programming language among software developers today.
+          </p>
+          <p class="note-body">
+            JavaScript is a
+            <a
+              href="https://en.wikipedia.org/wiki/High-level_programming_language"
+              class="custom-link"
+              target="_blank">
+              high-level
             </a>
-        </div>
-        <main>
-            <article class="flex flex-col w-10/12 mx-auto lg:w-1/2">
-                <header>
-                    <h1 class="note-title">JavaScript Basics</h1>
-                </header>
-                <section class="note-content">
-                    <p class="note-body">JavaScript is the programming language of the web. It is the most used programming language among software developers today.</p>
-                    <p class="note-body">JavaScript is a <a href="https://en.wikipedia.org/wiki/High-level_programming_language" class="custom-link" target="_blank">high-level</a>, <a href="https://en.wikipedia.org/wiki/Dynamic_programming_language" class="custom-link" target="_blank">dynamic</a>, <a href="https://en.wikipedia.org/wiki/Prototype-based_programming" class="custom-link" target="_blank">prototype-based</a>, <a href="" class="custom-link" target="_blank"></a> <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)" class="custom-link" target="_blank">interpreted</a> programming language. It is well suited to object-oriented and functional programming styles.</p>
-                    <p class="note-body">JavaScript was developed by Brendan Eich at Netscape in 1995. It was designed to add interactivity to websites, something HTML couldn't do alone. In 1996, JavaScript was standardized by ECMA (European Computer Manufacturers Association), resulting in the language's official name, ECMAScript. Over the years, its use-cases have expanded beyond the browser with environments like <a href="https://en.wikipedia.org/wiki/Node.js" class="custom-link" target="_blank">Node.js</a> (see my deeper dive into Node.js <a href="./wk11.html" class="custom-link">here</a>)</p>
-                    <p class="note-body">Most commonly, the execution environment for JavaScript is the web browser. You can run JavaScript code inside your DevTools in the web browser itself via the console.</p>
-                    <h3 class="note-subheading">Comments</h3>
-                    <p class="note-body">JavaScript has two types of comments: single-line & multi-line.</p>
-                    <pre class="mt-4 note-body"><code class="javascript">// This is a single-line comment
+            ,
+            <a
+              href="https://en.wikipedia.org/wiki/Dynamic_programming_language"
+              class="custom-link"
+              target="_blank">
+              dynamic
+            </a>
+            ,
+            <a
+              href="https://en.wikipedia.org/wiki/Prototype-based_programming"
+              class="custom-link"
+              target="_blank">
+              prototype-based
+            </a>
+            ,
+            <a href="" class="custom-link" target="_blank"></a>
+            <a
+              href="https://en.wikipedia.org/wiki/Interpreter_(computing)"
+              class="custom-link"
+              target="_blank">
+              interpreted
+            </a>
+            programming language. It is well suited to object-oriented and
+            functional programming styles.
+          </p>
+          <p class="note-body">
+            JavaScript was developed by Brendan Eich at Netscape in 1995. It was
+            designed to add interactivity to websites, something HTML couldn't
+            do alone. In 1996, JavaScript was standardized by ECMA (European
+            Computer Manufacturers Association), resulting in the language's
+            official name, ECMAScript. Over the years, its use-cases have
+            expanded beyond the browser with environments like
+            <a
+              href="https://en.wikipedia.org/wiki/Node.js"
+              class="custom-link"
+              target="_blank">
+              Node.js
+            </a>
+            (see my deeper dive into Node.js
+            <a href="./wk11.html" class="custom-link">here</a>
+            )
+          </p>
+          <p class="note-body">
+            Most commonly, the execution environment for JavaScript is the web
+            browser. You can run JavaScript code inside your DevTools in the web
+            browser itself via the console.
+          </p>
+          <h3 class="note-subheading" id="comments">Comments</h3>
+          <p class="note-body">
+            JavaScript has two types of comments: single-line & multi-line.
+          </p>
+          <pre
+            class="mt-4 note-body"><code class="javascript">// This is a single-line comment
 
 /*
 * This is a
 * multi-line
 * comment
 */</code></pre>
-                    <h3 class="note-subheading">Types</h3>
-                    <p class="note-body">JavaScript types can be divided into three categories:</p>
-                    <ol class="note-body">
-                        <li>1. Primitive types - numbers, strings, booleans</li>
-                        <li>2. Object types - collection of properties where each property has a name and value.</li>
-                        <li>3. Special types - null & undefined.</li>
-                    </ol>
-                    <h3 class="note-subheading">Variables</h3>
-                    <p class="note-body">Before you can use a variable or constant, it must be declared. This is done with <code>let</code> & <code>const</code>. The <code>let</code> keyword is used to declare a variable and can be reassigned. The <code>const</code> keyword is used to declare a constant, and must be initialized with a value.</p>
-                    <p class="note-body">
-                        JavaScript variables are untyped - meaning you don't have to explicitly state the type of data when it is declared. If an initial value is not specified, the value is undefined until a value is assigned.</p>
-                        <pre class="mt-4 note-body"><code class="javascript">// Declaring an untyped variable
+          <h3 class="note-subheading" id="values-types">Values & Types</h3>
+          <p class="note-body">
+            JavaScript types can be divided into two categories:
+          </p>
+          <ol class="note-body">
+            <li>Primitive types - numbers, strings, booleans.</li>
+            <li>
+              Object types - collection of properties where each property has a
+              name and value.
+            </li>
+          </ol>
+          <pre
+            class="mt-4 note-body"><code class="javascript">let num = 123; // Number
+let str = "Hello World"; // String
+
+let bool = true; // Boolean</code></pre>
+          <h3 class="note-subheading" id="variables">Variables</h3>
+          <p class="note-body">
+            Before you can use a variable or constant, it must be declared. This
+            is done with
+            <code>let</code>
+            &
+            <code>const</code>
+            . The
+            <code>let</code>
+            keyword is used to declare a variable and can be reassigned. The
+            <code>const</code>
+            keyword is used to declare a constant, and must be initialized with
+            a value.
+          </p>
+          <p class="note-body">
+            JavaScript variables are untyped - meaning you don't have to
+            explicitly state the type of data when it is declared. If an initial
+            value is not specified, the value is undefined until a value is
+            assigned.
+          </p>
+          <pre
+            class="mt-4"><code class="javascript">// Declaring an untyped variable
 let data;
 
-// Assigning a number
-data = 10;</code></pre>
-                    </p>
-                    <h3 class="note-subheading">Semicolons</h3>
-                    <p class="note-body">Semicolons are optional in JavaScript. However, it is good practice to use them to make the meaning of your code clear.</p>
-            </article>
-        </main>
-        <footer class="custom-footer">
-                <p>Copyright © 2023-Present Steele. Released under the MIT License.</p>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
-        <script>
-            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+// Let declaration (can be reassigned)
+let age = 30;
 
-            function handleDarkModeChange(e) {
-                const styleLink = document.getElementById('darkmodehighlight');
-                if (e.matches) {
-                    styleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/qtcreator-dark.min.css';
-                } else {
-                    styleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/qtcreator-light.min.css';
-                }
-            }
+// Const declaration (cannot be reassigned)
+const pi = 3.14;
+</code></pre>
+          <h3 class="note-subheading" id="arithmetic">Arithmetic</h3>
+          <p class="note-body">
+            JavaScript supports the standard arithmetic operations: addition,
+            subtraction, multiplication, and division, along with modulus
+            (remainder), increment and decrement.
+          </p>
+          <pre class="mt-4 note-body"><code class="javascript">let a = 10;
+let b = 3;
 
-            darkModeMediaQuery.addListener(handleDarkModeChange);
-            // Call the function manually to set the initial theme correctly.
-            handleDarkModeChange(darkModeMediaQuery);
-        </script>
+console.log(a + b); // Addition: 13
+console.log(a - b); // Subtraction: 7
+console.log(a * b); // Multiplication: 30
+console.log(a / b); // Division: ~3.33
+console.log(a % b); // Modulus: 1
+console.log(a++); // Increment: 11
+console.log(a--); // Decrement: 9</code></pre>
+          <h3 class="note-subheading" id="control-flow">Control Flow</h3>
+          <p class="note-body">
+            JavaScript has several control flow statements including if-else,
+            switch, for, while, and do-while.
+          </p>
+          <pre class="mt-4 note-body"><code class="javascript">// if-else
+let a = 5;
+let b = 10;
+if (a > b) {
+    console.log('a is greater than b');
+} else {
+    console.log('b is greater than a');
+}
 
-    </body>
+// switch
+let fruit = "apple";
+switch(fruit) {
+    case "banana":
+        console.log("I like bananas.");
+        break;
+    case "apple":
+        console.log("I like apples.");
+        break;
+    default:
+        console.log("I like all fruits.");
+}
 
+// for loop
+for (let i = 0; i &lt; 10; i++) {
+    console.log(i);
+}
+
+// while loop
+let i = 0;
+while (i &lt; 10) {
+    console.log(i);
+    i++;
+}
+
+// do-while loop
+let j = 0;
+do {
+    console.log(j);
+    j++;
+} while (j &lt; 10);</code></pre>
+          <h3 class="note-subheading" id="truthy-falsy">Truthy and Falsy</h3>
+          <p class="note-body">
+            In JavaScript, a value is either "truthy" or "falsy". A truthy value
+            is a value that is considered true when encountered in a Boolean
+            context. A falsy value is a value that is considered false when
+            encountered in a Boolean context.
+          </p>
+          <p class="note-body">
+            JavaScript uses type coercion in Boolean contexts, which are
+            basically places where it expects a Boolean true/false value.
+          </p>
+          <p class="note-body">
+            There are only six falsy values in JavaScript:
+          </p>
+          <ol class="custom-ordered-list">
+            <li>
+              <code>false</code>
+            </li>
+            <li>
+              <code>0</code>
+              and
+              <code>-0</code>
+            </li>
+            <li>
+              <code>""</code>
+              (empty string)
+            </li>
+            <li>
+              <code>null</code>
+            </li>
+            <li>
+              <code>undefined</code>
+            </li>
+            <li>
+              <code>NaN</code>
+            </li>
+          </ol>
+          <p class="note-body">
+            All other values, including all objects (and arrays) are truthy,
+            meaning they will evaluate to true when placed in a Boolean context.
+          </p>
+          <pre class="mt-4 note-body"><code class="javascript">if ([]) {
+    console.log('This is truthy!');
+}
+
+if (0) {
+    console.log('This will not be logged because 0 is falsy');
+}</code></pre>
+
+          <h3 class="note-subheading" id="semicolons">Semicolons</h3>
+          <p class="note-body">
+            Semicolons are optional in JavaScript. However, it is good practice
+            to use them to make the meaning of your code clear.
+          </p>
+          <h3 class="note-subheading" id="summary">Summary</h3>
+          <p class="note-body">
+            This note provides a fundamental overview of JavaScript, discussing
+            its origins, nature, and core concepts.
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer class="custom-footer">
+      <p>Copyright © 2023-Present Steele. Released under the MIT License.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script>
+      const darkModeMediaQuery = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      );
+
+      function handleDarkModeChange(e) {
+        const styleLink = document.getElementById("darkmodehighlight");
+        if (e.matches) {
+          styleLink.href =
+            "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/qtcreator-dark.min.css";
+        } else {
+          styleLink.href =
+            "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/qtcreator-light.min.css";
+        }
+      }
+
+      darkModeMediaQuery.addListener(handleDarkModeChange);
+      // Call the function manually to set the initial theme correctly.
+      handleDarkModeChange(darkModeMediaQuery);
+    </script>
+  </body>
 </html>
