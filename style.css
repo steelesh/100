@@ -61,6 +61,11 @@
   font-style: normal;
 }
 
+::selection {
+  background: #F0D731;
+  color: #000;
+}
+
 .base-font-size {
   @apply text-sm md:text-base
 }
