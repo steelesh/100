@@ -8,7 +8,7 @@
         <meta name="robots" content="noindex, nofollow" />
         <link rel="icon" href="../assets/favicon/favicon.svg" type="image/x-icon">
         <script src="https://kit.fontawesome.com/7d3dbbb15e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/lib/highlight/styles/routeros.min.css">
+        <link rel="stylesheet" href="/lib/highlight/styles/xt256.min.css">
         <link rel="stylesheet" href="/style.css">
         <title>100 days</title>
     </head>
@@ -25,14 +25,44 @@
                 <header>
                     <h1 class="note-title">JavaScript Basics</h1>
                 </header>
-                    <img class="mt-8" src="https://media4.giphy.com/media/fVeAI9dyD5ssIFyOyM/giphy.gif?cid=ecf05e473dbkqr180a78pqdjdi1pf8oaz13nu0ivjw2sx4l5&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" alt="Under Construction Work GIF by OctoNation® The Largest Octopus Fan Club!" style="width: 40%;">
-                <p class="note-body">This page is <b>under construction</b>. Check back later!</p>
+                <section class="note-content">
+                    <p class="note-body">JavaScript is the programming language of the web. It is the most used programming language among software developers today.</p>
+                    <p class="note-body">JavaScript is a <a href="https://en.wikipedia.org/wiki/High-level_programming_language" class="custom-link">high-level</a>, <a href="https://en.wikipedia.org/wiki/Dynamic_programming_language" class="custom-link">dynamic</a>, <a href="https://en.wikipedia.org/wiki/Prototype-based_programming" class="custom-link">prototype-based</a>, <a href="" class="custom-link"></a> <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)" class="custom-link">interpreted</a> programming language. It is well suited to object-oriented and functional programming styles.</p>
+                    <p class="note-body">JavaScript was developed by Brendan Eich at Netscape in 1995. It was designed to add interactivity to websites, something HTML couldn't do alone. In 1996, JavaScript was standardized by ECMA (European Computer Manufacturers Association), resulting in the language's official name, ECMAScript. Over the years, its use-cases have expanded beyond the browser with environments like <a href="https://en.wikipedia.org/wiki/Node.js" class="custom-link">Node.js</a> (see my deeper dive into Node.js <a href="./wk11.html" class="custom-link">here</a>)</p>
+                    <p class="note-body">Most commonly, the execution environment for JavaScript is the web browser. You can run JavaScript code inside your DevTools in the web browser itself via the console.</p>
+                    <h3 class="note-subheading">Comments</h3>
+                    <p class="note-body">JavaScript has two types of comments: single-line & multi-line.</p>
+                    <pre><code class="javascript">// This is a single-line comment
+
+/*
+* This is a
+* multi-line comment
+*/</code></pre>
+                    <h3 class="note-subheading">Types</h3>
+                    <p class="note-body">JavaScript types can be divided into three categories:</p>
+                    <ol class="note-body">
+                        <li>1. Primitive types - numbers, strings, booleans</li>
+                        <li>2. Object types - collection of properties where each property has a name and value.</li>
+                        <li>3. Special types - null & undefined.</li>
+                    </ol>
+                    <h3 class="note-subheading">Variables</h3>
+                    <p class="note-body">Before you can use a variable or constant, it must be declared. This is done with <code>let</code> & <code>const</code>. The <code>let</code> keyword is used to declare a variable and can be reassigned. The <code>const</code> keyword is used to declare a constant, and must be initialized with a value.</p>
+                    <p class="note-body">
+                        JavaScript variables are untyped - meaning you don't have to explicitly state the type of data when it is declared. If an initial value is not specified, the value is undefined until a value is assigned.</p>
+                        <pre class="note-body">Ex.<code class="javascript">// Declaring an untyped variable
+let data;
+
+// Assigning a number
+date = 10;</code></pre>
+                    </p>
+                    <h3 class="note-subheading">Semicolons</h3>
+                    <p class="note-body">Semicolons are optional in JavaScript. However, it is good practice to use them to make the meaining of your code clear.</p>
             </article>
         </main>
         <footer class="custom-footer">
                 <p>Copyright © 2023-Present Steele. Released under the MIT License.</p>
         </footer>
-        <script src="/lib/highlight/highlight.min.js" type="module"></script>
+        <script src="/lib/highlight/highlight.min.js"></script>
         <script>/* global hljs */
             hljs.highlightAll()
         </script>
