@@ -8,10 +8,10 @@
         <meta name="robots" content="noindex, nofollow" />
         <link rel="icon" href="/assets/favicon-a1cad98e.svg" type="image/x-icon">
         <script src="https://kit.fontawesome.com/7d3dbbb15e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/xt256.min.css">
+        <link id="darkmodehighlight" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/xt256.min.css">
         
         <title>100 days</title>
-      <link rel="stylesheet" href="/assets/style-ecb9ed93.css">
+      <link rel="stylesheet" href="/assets/style-55027880.css">
     </head>
 
     <body class="dark:bg-black text-[#555] dark:text-[#bbb]">
@@ -54,7 +54,7 @@
 let data;
 
 // Assigning a number
-date = 10;</code></pre>
+data = 10;</code></pre>
                     </p>
                     <h3 class="note-subheading">Semicolons</h3>
                     <p class="note-body">Semicolons are optional in JavaScript. However, it is good practice to use them to make the meaning of your code clear.</p>
@@ -65,6 +65,23 @@ date = 10;</code></pre>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script>
+        <script>
+            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+            function handleDarkModeChange(e) {
+                const styleLink = document.getElementById('darkmodehighlight');
+                if (e.matches) {
+                    styleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/qtcreator-dark.min.css';
+                } else {
+                    styleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/qtcreator-light.min.css';
+                }
+            }
+
+            darkModeMediaQuery.addListener(handleDarkModeChange);
+            // Call the function manually to set the initial theme correctly.
+            handleDarkModeChange(darkModeMediaQuery);
+        </script>
+
     </body>
 
 </html>

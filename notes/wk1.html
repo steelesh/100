@@ -8,7 +8,7 @@
         <meta name="robots" content="noindex, nofollow" />
         <link rel="icon" href="../assets/favicon/favicon.svg" type="image/x-icon">
         <script src="https://kit.fontawesome.com/7d3dbbb15e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/xt256.min.css">
+        <link id="darkmodehighlight" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/xt256.min.css">
         <link rel="stylesheet" href="/style.css">
         <title>100 days</title>
     </head>
@@ -53,7 +53,7 @@
 let data;
 
 // Assigning a number
-date = 10;</code></pre>
+data = 10;</code></pre>
                     </p>
                     <h3 class="note-subheading">Semicolons</h3>
                     <p class="note-body">Semicolons are optional in JavaScript. However, it is good practice to use them to make the meaning of your code clear.</p>
@@ -64,6 +64,23 @@ date = 10;</code></pre>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script>
+        <script>
+            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+            function handleDarkModeChange(e) {
+                const styleLink = document.getElementById('darkmodehighlight');
+                if (e.matches) {
+                    styleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/qtcreator-dark.min.css';
+                } else {
+                    styleLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/qtcreator-light.min.css';
+                }
+            }
+
+            darkModeMediaQuery.addListener(handleDarkModeChange);
+            // Call the function manually to set the initial theme correctly.
+            handleDarkModeChange(darkModeMediaQuery);
+        </script>
+
     </body>
 
 </html>
