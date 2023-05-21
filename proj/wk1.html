@@ -1,36 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="../assets/favicon/favicon.svg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/7d3dbbb15e.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>100 days</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="icon" href="../assets/favicon/favicon.svg" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/7d3dbbb15e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/style.css">
-        <title>100 days</title>
-    </head>
-
-    <body class="dark:bg-black text-[#555] dark:text-[#bbb]">
-        <div class="flex items-center return">
-            <a href="../index.html">
-                <i class="fa-solid fa-arrow-left-long fa-xs"></i>
-                <i class="ml-2">return</i>
-            </a>
+  <body class="dark:bg-black text-[#555] dark:text-[#bbb]">
+    <div class="flex items-center return">
+      <a href="../index.html">
+        <i class="fa-solid fa-arrow-left-long fa-xs"></i>
+        <i class="ml-2">return</i>
+      </a>
+    </div>
+    <main>
+      <section class="flex flex-col w-10/12 mx-auto lg:w-1/2">
+        <header>
+          <h1 class="note-title">Number guessing game</h1>
+        </header>
+        <h3 class="note-subheading">Guess a number between 1 and 10!</h3>
+        <div class="flex gap-8 mt-8">
+          <input
+            class="w-16 text-3xl text-center border-2 border-black dark:border-white"
+            id="guess"
+            type="number"
+            min="1"
+            max="10" />
+          <button onclick="makeGuess()" class="p-4 text-white bg-green-500">
+            Guess
+          </button>
+          <button onclick="resetGame()" class="p-4 text-white bg-red-500">
+            Reset
+          </button>
         </div>
-        <main>
-            <article class="flex flex-col w-10/12 mx-auto lg:w-1/2">
-                <header>
-                    <h1 class="note-title">This page is currently Under Construction</h1>
-                </header>
-                    <img class="mt-8" src="https://media4.giphy.com/media/fVeAI9dyD5ssIFyOyM/giphy.gif?cid=ecf05e473dbkqr180a78pqdjdi1pf8oaz13nu0ivjw2sx4l5&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" alt="Under Construction Work GIF by OctoNation® The Largest Octopus Fan Club!" style="width: 50%;">
-                <p class="note-body">Check back later!</p>
-            </article>
-        </main>
-        <footer class="custom-footer">
-                <p>Copyright © 2023-Present Steele. Released under the MIT License.</p>
-        </footer>
-    </body>
+        <p class="mt-4" id="result"></p>
+      </section>
+    </main>
+    <footer class="custom-footer">
+      <p>Copyright © 2023-Present Steele. Released under the MIT License.</p>
+    </footer>
+    <script>
+      let randomNumber = Math.floor(Math.random() * 10) + 1;
+      function makeGuess() {
+        const guess = document.getElementById("guess").value;
+        const result = document.getElementById("result");
 
+        if (guess < 1 || guess > 10 || isNaN(guess)) {
+          result.innerText = "Please enter a number between 1 and 10.";
+        } else {
+          if (guess == randomNumber) {
+            result.innerText = "Congratulations! You guessed the number!";
+          } else if (guess < randomNumber) {
+            result.innerText = "Too low! Try again.";
+          } else if (guess > randomNumber) {
+            result.innerText = "Too high! Try again.";
+          }
+        }
+      }
+      function resetGame() {
+        randomNumber = Math.floor(Math.random() * 100) + 1;
+        document.getElementById("guess").value = "";
+        document.getElementById("result").innerText = "";
+      }
+    </script>
+  </body>
 </html>
