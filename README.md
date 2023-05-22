@@ -16,6 +16,11 @@
 - Week 12 - Testing
 - Week 13 - Design Patterns
 
+## Built with
+
+- HTML
+- CSS
+- JavaScript
 
 ## License
 
